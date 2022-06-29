@@ -2,17 +2,13 @@
 console.log('it works')
 const ps = require('prompt-sync')
 const prompt1 = ps();
-const prompt2 = ps()
+const prompt2 = ps();
 const name = require('./tools/classInput');
 const validation = require('./tools/validation');
 const printXYZ = require('./tools/printXYZ');
 const e = require('express');
 
-prompt1.toString()
-console.log(name.inputs.inputsText)
-// const names = prompt('enter name: ');
-// console.log(names)
-
+prompt1.toString();
 
     const inputNumber = parseInt(prompt1('Enter odd number above 2: '))
     const inputText = prompt2('Enter letter X,Y and Z: ').trim().toUpperCase();
