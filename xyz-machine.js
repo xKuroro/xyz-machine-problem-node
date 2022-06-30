@@ -6,7 +6,7 @@ const prompt2 = ps()
 const name = require('./tools/classInput');
 const validation = require('./tools/validation');
 const printXYZ = require('./tools/printXYZ');
-const e = require('express');
+
 
 prompt1.toString()
 console.log(name.inputs.inputsText)
@@ -26,15 +26,14 @@ console.log(name.inputs.inputsText)
   if(!ff){
     console.log('input text field correctly.')
   }else{
-    let vertical = '';
-    let temp = '';
-   let arrayPrint = printXYZ(inputNumber,splitText)
-  //  vertical = vertical + arrayPrint;
-  // vertical.forEach(ver =>)
-   if(inputDirection && inputDirection === 'HORIZONTAL'){
-    console.log('This is horizontal')
-    console.log(arrayPrint);
-   }else{
-    console.log(arrayPrint)
-   }
+    // let vertical = '';
+    // let temp = '';
+    let arrayPrint = printXYZ(inputNumber, splitText);
+
+    if (inputDirection && inputDirection === "HORIZONTAL") {
+      console.log("This is horizontal");
+      console.log(arrayPrint);
+    } else {
+      console.log(arrayPrint);
+    }
   }
