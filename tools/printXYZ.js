@@ -69,6 +69,7 @@ const printXYZ = (number, text) => {
         maxNumber--;
         str = str.concat("\n");
       }
+      str = str.concat("\n");
       newStr += str;
     }
     contanerArrays[k] = letters;
