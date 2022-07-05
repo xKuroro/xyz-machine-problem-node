@@ -14,7 +14,7 @@ const inputDirection = prompt1("Enter Direction Vertical or Horizontal: ")
 
 let ff = validation.validation(inputNumber, inputText, inputDirection);
 let splitText = inputText.split("");
-console.log(splitText);
+
 
 if (!ff) {
   console.log("input text field correctly.");
@@ -23,8 +23,9 @@ if (!ff) {
 
   if (inputDirection && inputDirection === "HORIZONTAL") {
     console.log("This is horizontal");
-    console.log(arrayPrint);
+    console.log(arrayPrint.row);
   } else {
-    console.log(arrayPrint);
+    console.log("This is vertical");
+    console.log(arrayPrint.newStr);
   }
 }
