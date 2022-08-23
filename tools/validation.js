@@ -7,15 +7,15 @@ const validation = (num,text,direction) => {
     console.log(num)
 
     if(~~num == 0 || (num % 2) === 0 || !num > 2){
-        console.log('input ODD numbers.');
+        console.log('Input ODD numbers.');
     }else{
         errorNumber =  true;
     }if(!textXYZ(text)){
-        console.log('Letters must contain X,Y and Z')
+        console.log('Letters must contain X, Y and Z')
     }else{
         errorText = true;
     }if(direction && !correctDirection.includes(direction)){
-        console.log('text should be VERTICAL or HORIZONTAL.');
+        console.log('Text should be VERTICAL or HORIZONTAL.');
     }else{
         errorDirection = true;
     }
