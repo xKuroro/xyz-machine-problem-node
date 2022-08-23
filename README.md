@@ -7,4 +7,4 @@ Adding this line for rebasing example.
 
 ## How to run 
 1. Run in terminal node xyz-machine.js.
-2. jajaaj
+Modifying README to demonstrate rebasing.
