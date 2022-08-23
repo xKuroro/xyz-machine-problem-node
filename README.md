@@ -7,4 +7,4 @@ Adding this line for rebasing example.
 
 ## How to run 
 1. Run in terminal node xyz-machine.js.
-2. Renzel rebase ko bahay mo. : D
+2. jajaaj
