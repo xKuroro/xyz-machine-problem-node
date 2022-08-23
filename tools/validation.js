@@ -8,15 +8,19 @@ const validation = (num,text,direction) => {
 
     if(~~num == 0 || (num % 2) === 0 || !num > 2){
         console.log('Input ODD numbers.');
-    }else{
+    } else {
         errorNumber =  true;
-    }if(!textXYZ(text)){
+    }
+    
+    if(!textXYZ(text)) {
         console.log('Letters must contain X, Y and Z')
-    }else{
+    } else {
         errorText = true;
-    }if(direction && !correctDirection.includes(direction)){
+    }
+    
+    if(direction && !correctDirection.includes(direction)) {
         console.log('Text should be VERTICAL or HORIZONTAL.');
-    }else{
+    } else {
         errorDirection = true;
     }
 
@@ -24,7 +28,7 @@ const validation = (num,text,direction) => {
 
 }
 
-function textXYZ(ar){
+function textXYZ(ar) {
     const re = /^[XYZ]*$/;
     return re.test(String(ar));
 }
