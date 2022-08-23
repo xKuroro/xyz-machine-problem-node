@@ -7,8 +7,8 @@ const validation = require("./tools/validation");
 const printXYZ = require("./tools/printXYZ");
 
 const inputNumber = parseInt(prompt1("Enter odd number above 2: "));
-const inputText = prompt2("Enter letter X,Y and Z: ").trim().toUpperCase();
-const inputDirection = prompt1("Enter Direction Vertical or Horizontal: ")
+const inputText = prompt2("Enter letter X, Y and Z: ").trim().toUpperCase();
+const inputDirection = prompt1("Enter direction vertical or horizontal: ")
   .trim()
   .toUpperCase();
 
@@ -17,7 +17,7 @@ let splitText = inputText.split("");
 
 
 if (!ff) {
-  console.log("input text field correctly.");
+  console.log("Input text field correctly.");
 } else {
   let arrayPrint = printXYZ(inputNumber, splitText);
 
